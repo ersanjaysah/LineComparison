@@ -34,5 +34,47 @@ namespace Line_Comprison
 
             }
         }
+
+
+        public void checkLength(int p1, int p2, int r1, int r2)
+        {
+            if (p1 == p2)
+            {
+                int n = r1.CompareTo(r2);
+                if (n == 0)
+                {
+                    Console.WriteLine("Both lines are equal");
+                }
+                else if (n > 0)
+                {
+                    Console.WriteLine("First line is bigger");
+                }
+                else
+                {
+                    Console.WriteLine("first line is smaller");
+                }
+            }
+            else
+            {
+                length1 = r1 - p1;
+                length2 = r2 - p2;
+
+                int n = length1.CompareTo(length2);
+                if (n == 0)
+                {
+                    Console.WriteLine("Both lines are equal");
+                }
+                else if (n > 0)
+                {
+                    Console.WriteLine("First line is bigger");
+                }
+                else
+                {
+                    Console.WriteLine("first line is smaller");
+                }
+            }
+
+
+        }
     }
 }
