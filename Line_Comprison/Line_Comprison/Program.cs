@@ -11,14 +11,33 @@ namespace Line_Comprison
             Console.WriteLine("please enter your 1st cordinate number");
             Class1 obj = new Class1();
             int x1 = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("please enter your 2nd cordinate number");
             int x2 = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("please enter your 3rd cordinate number");
             int y1 = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("please enter your 4th cordinate number");
             int y2 = Convert.ToInt32(Console.ReadLine());
-
             obj.length(x1, x2, y1, y2);
+
+            
+            Console.WriteLine("To Check both lines equals or not, By Equal Method");
+            Console.WriteLine("enter 1st point number");
+            int a1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter 2nd point number");
+            int a2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter 3rd point number");
+            int b1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter 4th point number");
+            int b2 = Convert.ToInt32(Console.ReadLine());
+            obj.Lines_equal(a1, a2, b1, b2);
+
+
         }
     }
 }
